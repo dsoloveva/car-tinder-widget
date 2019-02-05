@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from'react-redux';
 
-import { ChoiceContainer }  from './components/choice-container';
+import MainContainer from './components/main-container/main-container';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <ChoiceContainer></ChoiceContainer>
+          <MainContainer></MainContainer>
         </div>
       </Provider>
     );

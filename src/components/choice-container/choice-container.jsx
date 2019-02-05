@@ -1,15 +1,22 @@
 import React from 'react';
 import { ChoiceItem } from './choice-item';
 import { connect } from 'react-redux';
-import { pushTag } from '../../actions/tags';
-import { RIGHT } from '../../constants/keys';
+import { like, dislike } from '../../actions/tags';
+import { startFetching } from '../../actions/status';
+import { loadResult } from '../../actions/results';
+import { LEFT, RIGHT } from '../../constants/keys';
 
 import './choice-container.css';
 
-const mapStateToProps = state => ({ itemsList: state.choiceItems })
+const mapStateToProps = state => ({
+  itemsList: state.choiceItems,
+})
 
 const mapDispatchToProps = dispatch => ({
-  pushTag: (tag) => dispatch(pushTag(tag)),
+  like: (tag) => dispatch(like(tag)),
+  dislike: (tag) => dispatch(dislike(tag)),
+  startFetching: () => dispatch(startFetching()),
+  loadResult: () => dispatch(loadResult())
 });
 class ChoiceContainerUi extends React.Component {
   state = {
@@ -17,11 +24,14 @@ class ChoiceContainerUi extends React.Component {
   };
 
   handleKey = (e) => {
-    if (this.state.currentItem >= this.props.itemsList.length - 1) {
-      return;
+    if (this.state.currentItem === this.props.itemsList.length - 1) {
+      this.props.loadResult();
     }
-    if (e.keyCode === RIGHT) {
-      this.props.pushTag(this.props.itemsList[this.state.currentItem].tags);
+
+    if (e.keyCode === LEFT) {
+      this.props.dislike(this.props.itemsList[this.state.currentItem].tags);
+    } else if (e.keyCode === RIGHT) {
+      this.props.like(this.props.itemsList[this.state.currentItem].tags);
     }
     this.setState({ currentItem: this.state.currentItem + 1 });
   };
@@ -33,7 +43,6 @@ class ChoiceContainerUi extends React.Component {
   };
 
   render () {
-    debugger;
     return (<div
         className="choice-container"
         ref={this.focusContainer}

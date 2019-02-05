@@ -3,14 +3,14 @@ import thunk from 'redux-thunk';
 import makeRootReducer from '../reducers/index';
 
 const initialState = {
-  choiceItems: [
-    { img: 'birds.jpg', tags: [''] },
-    { img: 'cats.jpg', tags: [''] },
-    { img: 'coffee.jpg', tags: [''] },
-    { img: 'cycling.jpg', tags: [''] }
-  ],
-  selectedTags: [],
-  results: {},
+  // choiceItems: [
+  //   { img: 'birds.jpg', tags: [''] },
+  //   { img: 'cats.jpg', tags: [''] },
+  //   { img: 'coffee.jpg', tags: [''] },
+  //   { img: 'cycling.jpg', tags: [''] }
+  // ],
+  // selectedTags: [],
+  // results: {},
 };
 
 

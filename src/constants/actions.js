@@ -1,1 +1,8 @@
-export const PUSH_TAG = 'PUSH_TAG';
+export const LIKE = 'LIKE';
+export const DISLIKE = 'DISLIKE';
+
+export const START_FETCHING = 'START_FETCHING';
+export const LOADING = 'LOADING';
+export const FINISHED = 'FINISHED';
+
+export const SET_RESULT = 'SET_RESULT';

@@ -1,15 +1,14 @@
 import { combineReducers } from 'redux';
 import tagsReducer from './tags';
+import choiceItemsReducer from './choiceItems';
+import resultsReducer from './results';
+import statusReducer from './status';
 
 const makeRootReducers = asyncReducers => combineReducers({
+  status: statusReducer,
   selectedTags: tagsReducer,
-  choiceItems: (state = [
-    { img: 'birds.jpg', tags: [''] },
-    { img: 'cats.jpg', tags: [''] },
-    { img: 'coffee.jpg', tags: [''] },
-    { img: 'cycling.jpg', tags: [''] }
-  ]) => state,
-  results: (state = {}) => state,
+  choiceItems: choiceItemsReducer,
+  results: resultsReducer,
   ...asyncReducers,
 });
 

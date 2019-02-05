@@ -1,3 +1,5 @@
-import { PUSH_TAG } from '../constants/actions';
+import { LIKE, DISLIKE } from '../constants/actions';
 
-export const pushTag = (tags) => ({ type: PUSH_TAG, tags });
+export const like = (tags) => ({ type: LIKE, tags });
+
+export const dislike = (tags) => ({ type: DISLIKE, tags });
