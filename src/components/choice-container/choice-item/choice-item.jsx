@@ -4,5 +4,5 @@ import './choice-item.css';
 export const ChoiceItem = ({img}) => (
   <img
     className="choice-item"
-    src={`images/sm/${img}`}/>
+    src={`${process.env.PUBLIC_URL}/images/sm/${img}`}/>
 );
