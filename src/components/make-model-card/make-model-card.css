@@ -1,0 +1,26 @@
+.inventories {
+  display: flex;
+}
+
+.inventory-item {
+  max-width: 300px;
+}
+.inventory-item a:hover {
+  text-decoration: none;
+}
+
+.card-title {
+  color: #555;
+  font-size: 1.3rem;
+  letter-spacing: 0;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  color: #555;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
