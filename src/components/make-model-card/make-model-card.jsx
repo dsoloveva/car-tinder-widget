@@ -30,6 +30,8 @@ class MakeModelCard extends Component {
     )
   }
 
+  convertUrlParam = (param) => param.toLowerCase().replace(' ', '-');
+
   render () {
     const { make, model, inventories} = this.props.makeModel;
     const title = `${make} ${model}`;
@@ -37,7 +39,7 @@ class MakeModelCard extends Component {
         className="make-model-card"
       >
       <div>
-        <a className="d-block h5 mb-0" href="/mazda/cx-5/2019/vin/JM3KFACM9K0530733/?paymenttype=lease">
+        <a className="d-block h5 mb-0" href={`https://www.edmunds.com/${this.convertUrlParam(make)}/${this.convertUrlParam(model)}/`} target="_blanc">
           {title}
         </a>
       </div>
