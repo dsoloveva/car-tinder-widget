@@ -10,7 +10,7 @@ const initialState = [
   { img: "fastfood.jpg", tags: ["fastfood", "cola"] },
   { img: "fitness.jpg", tags: ["sport", "sporty"] },
   { img: "healthfood.jpg", tags: ["homefood", "restaurants"] },
-  { img: "listenmusic", tags: ["pop", "casual"] },
+  { img: "listenmusic.jpg", tags: ["pop", "casual"] },
   { img: "pizza.jpg", tags: ["fastfood"] },
   { img: "plants.jpg", tags: ["nature"] },
   { img: "reading.jpg", tags: ["reading", "casual"] },
