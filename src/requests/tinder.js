@@ -1,7 +1,7 @@
 import 'isomorphic-fetch';
 
 export function getRecommendations(tags) {
-    const url = 'http://amishin.pythonanywhere.com/api/v1/model/predict';
+    const url = 'https://amishin.pythonanywhere.com/api/v1/model/predict';
     const requestConfig = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
