@@ -8,9 +8,12 @@ const mapStateToProps = state => ({
 
 class ResultContainerUI extends Component {
   render () {
-    return (<Fragment>
-      {this.props.results.map(item => <MakeModelCard key={`${item.make}-${item.model}`} makeModel={item}></MakeModelCard>)}
-    </Fragment>);
+    return (<div className="d-flex flex-wrap justify-content-around">
+      {this.props.results.map(item => 
+        <MakeModelCard key={`${item.make}-${item.model}`} makeModel={item}>
+        </MakeModelCard>)
+      }
+    </div>);
   };
 };
 
