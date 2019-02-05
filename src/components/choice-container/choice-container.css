@@ -1,3 +1,28 @@
 .choice-container {
+  height: 100%;
   outline: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.choice-container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-container button {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.choice-container button.like {
+  align-items: end;
+}
+
+.choice-container button.dislike {
+  align-items: flex-end;
 }

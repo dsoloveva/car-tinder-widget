@@ -1,3 +1,11 @@
 .choice-item {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-item__image {
   border-radius: 10px;
+  max-width: calc(100% - 20px);
 }

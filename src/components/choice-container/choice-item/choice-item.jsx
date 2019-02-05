@@ -2,7 +2,11 @@ import React from 'react';
 import './choice-item.css';
 
 export const ChoiceItem = ({img}) => (
-  <img
-    className="choice-item"
-    src={`images/sm/${img}`}/>
+  <div className="choice-item">
+    <img
+      className="choice-item__image"
+      src={`images/sm/${img}`}
+      alt={img}
+    />
+  </div>
 );
