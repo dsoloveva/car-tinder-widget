@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/car-tinder/precache-manifest.073e6897c1319c29d287dcd56209dfcb.js"
+  "/car-tinder/precache-manifest.2beca772be4f3bcc4f3476f792ec5a26.js"
 );
 
 workbox.clientsClaim();
