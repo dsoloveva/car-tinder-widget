@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/car-tinder/static/js/runtime~main.6bffcf53.js"
   },
   {
-    "revision": "67b6d4c0d9b3db193e2c",
-    "url": "/car-tinder/static/js/main.67b6d4c0.chunk.js"
+    "revision": "183c00a06902b98dedb6",
+    "url": "/car-tinder/static/js/main.183c00a0.chunk.js"
   },
   {
     "revision": "4c76d8339aa47468665e",
     "url": "/car-tinder/static/js/1.4c76d833.chunk.js"
   },
   {
-    "revision": "67b6d4c0d9b3db193e2c",
-    "url": "/car-tinder/static/css/main.c9f689bb.chunk.css"
+    "revision": "183c00a06902b98dedb6",
+    "url": "/car-tinder/static/css/main.1264a39f.chunk.css"
   },
   {
-    "revision": "b2a6556e32d27b468e01fe3c1c81c700",
+    "revision": "eb436d5f43f57d76054c439099f2c593",
     "url": "/car-tinder/index.html"
   }
 ];
