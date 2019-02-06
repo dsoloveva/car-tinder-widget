@@ -26,3 +26,9 @@
 .choice-container button.dislike {
   align-items: flex-end;
 }
+
+.choice-items {
+  position: relative;
+  flex: 1 1 100%;
+  display: flex;
+}

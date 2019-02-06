@@ -25,7 +25,7 @@ class MakeModelCard extends Component {
             </div>
             {/* <CardImg top width="100%" src={src} alt="" /> */}
             {<CardBody>
-              <CardTitle class="card__title">{title}</CardTitle>
+              <CardTitle>{title}</CardTitle>
               <CardSubtitle>Base MSRP: {inv.prices.baseMsrp.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</CardSubtitle>
             </CardBody> }
           </Card>

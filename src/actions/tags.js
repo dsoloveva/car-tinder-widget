@@ -1,5 +1,7 @@
-import { LIKE, DISLIKE } from '../constants/actions';
+import { LIKE, DISLIKE, PROCESS } from '../constants/actions';
 
-export const like = (tags) => ({ type: LIKE, tags });
+export const like = (tags, item) => ({ type: LIKE, tags, item });
 
-export const dislike = (tags) => ({ type: DISLIKE, tags });
+export const dislike = (tags, item) => ({ type: DISLIKE, tags, item });
+
+export const process = (item) => ({ type: PROCESS, item });

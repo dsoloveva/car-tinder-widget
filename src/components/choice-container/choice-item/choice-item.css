@@ -1,11 +1,50 @@
 .choice-item {
-  flex-grow: 1;
+  flex: 1 1 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .15s linear;
+}
+
+.choice-item--visible {
+  opacity: 1;
 }
 
 .choice-item__image {
   border-radius: 10px;
   max-width: calc(100% - 20px);
+  max-height: 100%;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.choice-item__image--like {
+  animation-name: like;
+}
+
+.choice-item__image--dislike {
+  animation-name: dislike;
+}
+
+@keyframes like {
+  from {
+    transform: rotate(0) translate(0, 0);
+  }
+  to {
+    transform: rotate(45deg) translate(300%, 150%);
+  }
+}
+
+@keyframes dislike {
+  from {
+    transform: rotate(0) translate(0, 0);
+  }
+  to {
+    transform: rotate(-45deg) translate(-300%, 150%);
+  }
 }
