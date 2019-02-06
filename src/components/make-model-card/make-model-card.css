@@ -1,6 +1,7 @@
 .inventories {
   display: flex;
   align-items: stretch;
+  flex: 1 1 100%;
 }
 
 .inventory-item {
@@ -34,4 +35,9 @@
 
 .card_header {
   color: #017ee5;
+}
+
+.make-model-card {
+  display: flex;
+  flex-direction: column;
 }
