@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/car-tinder-widget/static/css/main.1264a39f.chunk.css"
   },
   {
-    "revision": "baa93388155d106aebb6e1cf6fd7dd6b",
+    "revision": "ac434d8fcd4307345820806d9fe75660",
     "url": "/car-tinder-widget/index.html"
   }
 ];
