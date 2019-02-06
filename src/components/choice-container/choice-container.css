@@ -1,8 +1,11 @@
 .choice-container {
+  position: relative;
   height: 100%;
   outline: none;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 .choice-container .buttons {
@@ -28,7 +31,7 @@
 }
 
 .choice-items {
-  position: relative;
+  /* position: relative; */
   flex: 1 1 100%;
   display: flex;
 }
