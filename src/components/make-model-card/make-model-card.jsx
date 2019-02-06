@@ -6,10 +6,15 @@ import './make-model-card.css';
 
 class MakeModelCard extends Component {
 
-  renderInventory = (inv) => {
+  findInvPhoto = (inventories) => {
+    return inventories.find(inv => inv.vehicleInfo.photo.defaultPhoto && inv.vehicleInfo.photo.defaultPhoto.large.url).vehicleInfo.photo.defaultPhoto.large.url;
+  }
+
+  renderInventory = (inv, inventories) => {
     const src = inv.vehicleInfo.photo.defaultPhoto
       ? inv.vehicleInfo.photo.defaultPhoto.large.url
-      : 'https://static.ed.edmunds-media.com/unversioned/img/e17/no-vehicle-image.png';
+      : this.findInvPhoto(inventories);
+      // : 'https://static.ed.edmunds-media.com/unversioned/img/e17/no-vehicle-image.png';
     const title = `${inv.vehicleInfo.styleInfo.year} ${inv.vehicleInfo.styleInfo.trim}`;
     return (
       <div key={inv.vin} className="inventory-item m-1">
@@ -49,7 +54,7 @@ class MakeModelCard extends Component {
           </a>
         </div>
         <div className="inventories justify-content-around">
-          {inventories.results.map(inventory => this.renderInventory(inventory))}
+          {inventories.results.map(inventory => this.renderInventory(inventory, inventories.results))}
         </div>
       </div>
     );
