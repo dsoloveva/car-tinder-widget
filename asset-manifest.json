@@ -1,13 +1,13 @@
 {
-  "main.css": "/car-tinder/static/css/main.1264a39f.chunk.css",
-  "main.js": "/car-tinder/static/js/main.183c00a0.chunk.js",
-  "main.js.map": "/car-tinder/static/js/main.183c00a0.chunk.js.map",
-  "static/js/1.4c76d833.chunk.js": "/car-tinder/static/js/1.4c76d833.chunk.js",
-  "static/js/1.4c76d833.chunk.js.map": "/car-tinder/static/js/1.4c76d833.chunk.js.map",
-  "runtime~main.js": "/car-tinder/static/js/runtime~main.6bffcf53.js",
-  "runtime~main.js.map": "/car-tinder/static/js/runtime~main.6bffcf53.js.map",
-  "static/css/main.1264a39f.chunk.css.map": "/car-tinder/static/css/main.1264a39f.chunk.css.map",
-  "index.html": "/car-tinder/index.html",
-  "precache-manifest.eff5cb1109fd58314161835623fe47ae.js": "/car-tinder/precache-manifest.eff5cb1109fd58314161835623fe47ae.js",
-  "service-worker.js": "/car-tinder/service-worker.js"
+  "main.css": "/car-tinder-widget/static/css/main.1264a39f.chunk.css",
+  "main.js": "/car-tinder-widget/static/js/main.60253724.chunk.js",
+  "main.js.map": "/car-tinder-widget/static/js/main.60253724.chunk.js.map",
+  "static/js/1.4c76d833.chunk.js": "/car-tinder-widget/static/js/1.4c76d833.chunk.js",
+  "static/js/1.4c76d833.chunk.js.map": "/car-tinder-widget/static/js/1.4c76d833.chunk.js.map",
+  "runtime~main.js": "/car-tinder-widget/static/js/runtime~main.8b1989e1.js",
+  "runtime~main.js.map": "/car-tinder-widget/static/js/runtime~main.8b1989e1.js.map",
+  "static/css/main.1264a39f.chunk.css.map": "/car-tinder-widget/static/css/main.1264a39f.chunk.css.map",
+  "index.html": "/car-tinder-widget/index.html",
+  "precache-manifest.48b92a329f60babe0ba9a1a779561bc9.js": "/car-tinder-widget/precache-manifest.48b92a329f60babe0ba9a1a779561bc9.js",
+  "service-worker.js": "/car-tinder-widget/service-worker.js"
 }
