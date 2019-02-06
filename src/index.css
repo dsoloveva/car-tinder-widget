@@ -3,10 +3,10 @@ html, body {
   height: 100%;
 }
 
-#root {
+/* #root {
   width: 100%;
   height: calc(100% - 60px);
-}
+} */
 
 .header {
   display: flex;
