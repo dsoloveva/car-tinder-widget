@@ -17,7 +17,7 @@ class MakeModelCard extends Component {
           href={`https://www.edmunds.com/${inv.vehicleInfo.styleInfo.make}/${inv.vehicleInfo.styleInfo.model}/${inv.vehicleInfo.styleInfo.year}/vin/${inv.vin}/`}
           target="_blanc"
         >
-          <Card>
+          <Card className="h-100">
             <div 
               className="card_image"
               style={{ backgroundImage: `url(${src})` }}

@@ -1,5 +1,6 @@
 .inventories {
   display: flex;
+  align-items: stretch;
 }
 
 .inventory-item {
